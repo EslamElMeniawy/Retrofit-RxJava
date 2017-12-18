@@ -13,6 +13,7 @@ import retrofit2.http.Query;
  */
 
 public interface ApiInterface {
+    @SuppressWarnings("SameParameterValue")
     @GET("coupons")
     Observable<StoreCoupons> getCoupons(@Query("status") String status);
 
